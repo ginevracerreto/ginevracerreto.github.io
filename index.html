@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginevra Cerretto | Data Analyst Portfolio</title>
+    <style>
+        /* ===== GLOBAL STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            background-color: #1a1a2e;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            color: #e94560;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e94560;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 100px 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e94560;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #ccc;
+        }
+
+        .hero a {
+            background-color: #e94560;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #c73652;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about {
+            padding: 80px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* ===== SKILLS SECTION ===== */
+        .skills {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #e94560;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skill-tag {
+            background-color: #16213e;
+            border: 1px solid #e94560;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* ===== PROJECTS SECTION ===== */
+        .projects {
+            padding: 80px 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .projects h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a1a2e;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-card h3 {
+            color: #e94560;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project-card .tags span {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+
+        .project-card a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #e94560;
+        }
+
+        .contact p {
+            color: #ccc;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            background-color: #e94560;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .contact-links a:hover {
+            background-color: #c73652;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f0f1a;
+            color: #666;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">GC.</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Hi, I'm <span>Ginevra Cerretto</span></h1>
+        <p>Data Analyst & Industrial Engineer passionate about turning complex data into clear, actionable insights.</p>
+        <a href="#projects">View My Work</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a Six Sigma Green Belt certified Industrial Engineer with hands-on experience in data analytics, 
+            process optimization, and business intelligence. I've worked across manufacturing, operations, and 
+            international business environments — always with a focus on using data to drive smarter decisions. 
+            I'm fluent in English, Italian, and Spanish, and I love solving complex problems with elegant, 
+            data-driven solutions.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Excel VBA</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">Power Automate</span>
+            <span class="skill-tag">Six Sigma</span>
+            <span class="skill-tag">Lean Manufacturing</span>
+            <span class="skill-tag">Statistical Modeling</span>
+            <span class="skill-tag">ANOVA</span>
+            <span class="skill-tag">Pareto Analysis</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>📊 Power BI KPI Dashboard</h3>
+                <p>Built real-time production dashboards at UST-Mamiya that reduced scrap rates from 10% to 7% and gave management instant visibility into key manufacturing KPIs.</p>
+                <div class="tags">
+                    <span>Power BI</span>
+                    <span>Manufacturing</span>
+                    <span>KPI Tracking</span>
+                </div>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>📈 Annual Budget Forecasting Tool</h3>
+                <p>Designed a multi-layered Excel VBA forecasting model at WeRoad, integrating SQL queries and Tableau visualizations to produce a full company budget in under 30 days.</p>
+                <div class="tags">
+                    <span>Excel VBA</span>
+                    <span>SQL</span>
+                    <span>Tableau</span>
+                </div>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>🏭 Production Line Optimization</h3>
+                <p>Conducted time studies and line balancing at Siemens EP, redesigning the Switchboards floor layout and increasing daily output by 15-21% through data-driven planning.</p>
+                <div class="tags">
+                    <span>Statistical Analysis</span>
+                    <span>Lean</span>
+                    <span>Six Sigma</span>
+                </div>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>🔬 Nylon Degradation Research</h3>
+                <p>Analyzed polyamide 12 particle degradation data across temperature variables for selective laser sintering research at UT Arlington, applying statistical modeling techniques.</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Statistical Modeling</span>
+                    <span>Research</span>
+                </div>
+                <a href="#">View Project →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Let's Connect</h2>
+        <p>Open to data analyst opportunities — feel free to reach out!</p>
+        <div class="contact-links">
+            <a href="mailto:ginevracerretto@gmail.com">📧 Email Me</a>
+            <a href="https://shorturl.at/ksX02" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Ginevra Cerretto · Built with GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
