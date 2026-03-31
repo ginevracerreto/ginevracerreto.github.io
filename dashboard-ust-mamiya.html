@@ -15,7 +15,6 @@
             color: #e0e0e0;
         }
 
-        /* ===== HEADER ===== */
         header {
             background: linear-gradient(135deg, #1a1a2e, #16213e);
             padding: 25px 40px;
@@ -27,18 +26,9 @@
             gap: 15px;
         }
 
-        header h1 {
-            font-size: 1.6rem;
-            color: #fff;
-        }
-
+        header h1 { font-size: 1.6rem; color: #fff; }
         header h1 span { color: #e94560; }
-
-        header p {
-            color: #aaa;
-            font-size: 0.9rem;
-            margin-top: 4px;
-        }
+        header p { color: #aaa; font-size: 0.9rem; margin-top: 4px; }
 
         .header-right {
             display: flex;
@@ -47,7 +37,6 @@
             gap: 8px;
         }
 
-        /* ===== FILTERS ===== */
         .filters {
             background-color: #16213e;
             padding: 15px 40px;
@@ -58,11 +47,7 @@
             border-bottom: 1px solid #2a2a4a;
         }
 
-        .filters label {
-            font-size: 0.85rem;
-            color: #aaa;
-            margin-right: 6px;
-        }
+        .filters label { font-size: 0.85rem; color: #aaa; margin-right: 6px; }
 
         .filters select {
             background-color: #1a1a2e;
@@ -75,10 +60,8 @@
         }
 
         .filters select:focus { outline: none; }
-
         .filter-group { display: flex; align-items: center; }
 
-        /* ===== KPI CARDS ===== */
         .kpi-section {
             padding: 30px 40px 10px;
             display: grid;
@@ -95,40 +78,16 @@
         }
 
         .kpi-card:hover { transform: translateY(-3px); }
-
-        .kpi-card .label {
-            font-size: 0.78rem;
-            color: #aaa;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
-        }
-
-        .kpi-card .value {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #fff;
-        }
-
+        .kpi-card .label { font-size: 0.78rem; color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .kpi-card .value { font-size: 1.8rem; font-weight: bold; color: #fff; }
         .kpi-card .value.red { color: #e94560; }
         .kpi-card .value.green { color: #4caf50; }
         .kpi-card .value.yellow { color: #ffc107; }
-
-        .kpi-card .sub {
-            font-size: 0.78rem;
-            color: #888;
-            margin-top: 5px;
-        }
-
-        .kpi-card .trend {
-            font-size: 0.82rem;
-            margin-top: 6px;
-        }
-
+        .kpi-card .sub { font-size: 0.78rem; color: #888; margin-top: 5px; }
+        .kpi-card .trend { font-size: 0.82rem; margin-top: 6px; }
         .trend.up { color: #e94560; }
         .trend.down { color: #4caf50; }
 
-        /* ===== CHARTS GRID ===== */
         .charts-grid {
             padding: 20px 40px;
             display: grid;
@@ -143,35 +102,14 @@
             border: 1px solid #2a2a4a;
         }
 
-        .chart-card.full-width {
-            grid-column: 1 / -1;
-        }
+        .chart-card.full-width { grid-column: 1 / -1; }
+        .chart-card h3 { font-size: 1rem; color: #e94560; margin-bottom: 5px; }
+        .chart-card .chart-sub { font-size: 0.8rem; color: #888; margin-bottom: 18px; }
 
-        .chart-card h3 {
-            font-size: 1rem;
-            color: #e94560;
-            margin-bottom: 5px;
-        }
+        .chart-wrapper { position: relative; height: 280px; }
+        .chart-wrapper.tall { height: 340px; }
 
-        .chart-card .chart-sub {
-            font-size: 0.8rem;
-            color: #888;
-            margin-bottom: 18px;
-        }
-
-        .chart-wrapper {
-            position: relative;
-            height: 280px;
-        }
-
-        .chart-wrapper.tall {
-            height: 340px;
-        }
-
-        /* ===== MATERIAL TABLE ===== */
-        .table-section {
-            padding: 10px 40px 30px;
-        }
+        .table-section { padding: 10px 40px 30px; }
 
         .table-card {
             background: linear-gradient(135deg, #1a1a2e, #16213e);
@@ -180,23 +118,10 @@
             border: 1px solid #2a2a4a;
         }
 
-        .table-card h3 {
-            font-size: 1rem;
-            color: #e94560;
-            margin-bottom: 5px;
-        }
+        .table-card h3 { font-size: 1rem; color: #e94560; margin-bottom: 5px; }
+        .table-card .chart-sub { font-size: 0.8rem; color: #888; margin-bottom: 18px; }
 
-        .table-card .chart-sub {
-            font-size: 0.8rem;
-            color: #888;
-            margin-bottom: 18px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.88rem;
-        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
 
         th {
             background-color: #0f0f1a;
@@ -208,12 +133,7 @@
             letter-spacing: 0.5px;
         }
 
-        td {
-            padding: 10px 14px;
-            border-bottom: 1px solid #2a2a4a;
-            color: #ccc;
-        }
-
+        td { padding: 10px 14px; border-bottom: 1px solid #2a2a4a; color: #ccc; }
         tr:hover td { background-color: #16213e; }
 
         .badge {
@@ -228,7 +148,6 @@
         .badge.green { background-color: rgba(76,175,80,0.2); color: #4caf50; }
         .badge.yellow { background-color: rgba(255,193,7,0.2); color: #ffc107; }
 
-        /* ===== FOOTER ===== */
         footer {
             text-align: center;
             padding: 20px;
@@ -237,7 +156,6 @@
             border-top: 1px solid #2a2a4a;
         }
 
-        /* ===== BACK BUTTON ===== */
         .back-btn {
             display: inline-block;
             background-color: #e94560;
@@ -263,7 +181,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
     <div>
         <h1>UST-Mamiya <span>| Scrap Rate KPI Dashboard</span></h1>
@@ -274,7 +191,6 @@
     </div>
 </header>
 
-<!-- FILTERS -->
 <div class="filters">
     <div class="filter-group">
         <label>📅 Time Period:</label>
@@ -304,12 +220,9 @@
     </div>
 </div>
 
-<!-- KPI CARDS -->
 <div class="kpi-section" id="kpiSection"></div>
 
-<!-- CHARTS -->
 <div class="charts-grid">
-
     <div class="chart-card full-width">
         <h3>📉 Daily Scrap Rate Over Time</h3>
         <div class="chart-sub">Daily scrap rate (%) across the 6-month period · Target: ≤ 7%</div>
@@ -349,10 +262,8 @@
             <canvas id="costChart"></canvas>
         </div>
     </div>
-
 </div>
 
-<!-- MATERIAL BREAKDOWN TABLE -->
 <div class="table-section">
     <div class="table-card">
         <h3>🧾 Material Inventory & Scrap Breakdown by Type</h3>
@@ -378,15 +289,13 @@
 </div>
 
 <footer>
-    <p>Dashboard recreated for portfolio purposes · Data simulated based on real project parameters · Ginevra Cerreto © 2025</p>
+    <p>Dashboard recreated for portfolio purposes · Data simulated based on real project parameters · Ginevra Cerretto © 2025</p>
 </footer>
 
 <script>
 // ============================================================
-// DATA GENERATION
+// POLE MODELS (50 models)
 // ============================================================
-
-// --- Pole Models (50 models: lengths 300–600cm, flex 10–22) ---
 const lengths = [300, 340, 370, 400, 420, 440, 450, 460, 470, 480, 500, 520, 550, 575, 600];
 const flexes  = [10, 12, 14, 15, 16, 17, 18, 20, 22];
 const poleModels = [];
@@ -396,33 +305,34 @@ lengths.forEach(l => {
             poleModels.push({
                 name: `${l}/${f}`,
                 length: l,
-                flex: f,
-                gfArea: parseFloat((l * 0.018 + f * 0.12 + Math.random() * 0.5).toFixed(2)),
-                cfArea: parseFloat((l * 0.011 + f * 0.08 + Math.random() * 0.3).toFixed(2)),
-                baseFailRate: parseFloat((0.04 + Math.random() * 0.10).toFixed(3))
+                flex: f
             });
         }
     });
 });
 
-// --- Material Types ---
+// ============================================================
+// MATERIAL TYPES (3 fiberglass + 3 carbon fiber)
+// ============================================================
 const materials = [
-    { id: 'GF-Standard',  type: 'gf', label: 'Fiberglass Standard',  costPerSqFt: 1.20, rollWidth: 50 },
-    { id: 'GF-Medium',    type: 'gf', label: 'Fiberglass Medium',    costPerSqFt: 1.55, rollWidth: 50 },
-    { id: 'GF-Heavy',     type: 'gf', label: 'Fiberglass Heavy',     costPerSqFt: 1.90, rollWidth: 50 },
-    { id: 'CF-Standard',  type: 'cf', label: 'Carbon Fiber Standard',costPerSqFt: 4.80, rollWidth: 50 },
-    { id: 'CF-Medium',    type: 'cf', label: 'Carbon Fiber Medium',  costPerSqFt: 6.20, rollWidth: 50 },
-    { id: 'CF-Heavy',     type: 'cf', label: 'Carbon Fiber Heavy',   costPerSqFt: 8.10, rollWidth: 50 },
+    { id: 'GF-Standard', type: 'gf', label: 'Fiberglass Standard',  costPerSqFt: 1.20 },
+    { id: 'GF-Medium',   type: 'gf', label: 'Fiberglass Medium',    costPerSqFt: 1.55 },
+    { id: 'GF-Heavy',    type: 'gf', label: 'Fiberglass Heavy',     costPerSqFt: 1.90 },
+    { id: 'CF-Standard', type: 'cf', label: 'Carbon Fiber Standard',costPerSqFt: 4.80 },
+    { id: 'CF-Medium',   type: 'cf', label: 'Carbon Fiber Medium',  costPerSqFt: 6.20 },
+    { id: 'CF-Heavy',    type: 'cf', label: 'Carbon Fiber Heavy',   costPerSqFt: 8.10 },
 ];
 
-// --- Trapezoid cutting waste factor ---
-// A trapezoid inscribed in a rectangle wastes the triangular corners
-// Waste factor ≈ 18-25% of roll area used
+const gfMaterials = materials.filter(m => m.type === 'gf');
+const cfMaterials = materials.filter(m => m.type === 'cf');
+
 function cuttingWasteFactor() {
     return 0.18 + Math.random() * 0.07;
 }
 
-// --- Generate daily data for 180 days ---
+// ============================================================
+// GENERATE DAILY DATA (180 days, tagged by model + material)
+// ============================================================
 const startDate = new Date(2023, 0, 2);
 const dailyData = [];
 
@@ -433,57 +343,96 @@ for (let d = 0; d < 180; d++) {
     const dayOfWeek = date.getDay();
     if (dayOfWeek === 0 || dayOfWeek === 6) continue;
 
-    const progress = d / 179;
-    const baseScrap = 10 - (3 * progress) + (Math.random() * 2 - 1);
-    const scrapRate = Math.max(5.5, Math.min(13, baseScrap));
-
+    const progress    = d / 179;
+    const baseScrap   = 10 - (3 * progress) + (Math.random() * 2 - 1);
+    const scrapRate   = Math.max(5.5, Math.min(13, baseScrap));
     const polesProduced = Math.floor(20 + Math.random() * 25);
     const failureRate = 0.06 + (0.04 * (1 - progress)) + (Math.random() * 0.03 - 0.015);
-    const failures = Math.round(polesProduced * failureRate);
+    const failures    = Math.round(polesProduced * failureRate);
 
-    // Assign a random pole model to each day's primary production run
-    const model = poleModels[Math.floor(Math.random() * poleModels.length)];
-
-    // Assign a random material pair for the day
-    const gfMat = materials.filter(m => m.type === 'gf')[Math.floor(Math.random() * 3)];
-    const cfMat = materials.filter(m => m.type === 'cf')[Math.floor(Math.random() * 3)];
+    // Tag each day with a pole model and specific material variants
+    const model  = poleModels[Math.floor(Math.random() * poleModels.length)];
+    const gfMat  = gfMaterials[Math.floor(Math.random() * gfMaterials.length)];
+    const cfMat  = cfMaterials[Math.floor(Math.random() * cfMaterials.length)];
 
     const totalPurchased = polesProduced * 28 + Math.random() * 200;
-    const gfPurchased = totalPurchased * 0.6;
-    const cfPurchased = totalPurchased * 0.4;
+    const gfPurchased    = totalPurchased * 0.6;
+    const cfPurchased    = totalPurchased * 0.4;
 
-    const wasteFactor = cuttingWasteFactor();
+    const wasteFactor  = cuttingWasteFactor();
     const cuttingWaste = totalPurchased * wasteFactor;
     const failureScrap = failures * 28;
-    const totalScrap = cuttingWaste + failureScrap;
+    const totalScrap   = cuttingWaste + failureScrap;
 
-    // Blended cost based on actual materials used that day
     const blendedRate = (gfMat.costPerSqFt * 0.6) + (cfMat.costPerSqFt * 0.4);
-    const scrapCost = totalScrap * blendedRate;
+    const scrapCost   = totalScrap * blendedRate;
 
     dailyData.push({
         date,
         month,
         dateStr: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-        scrapRate: parseFloat(scrapRate.toFixed(2)),
+        scrapRate:      parseFloat(scrapRate.toFixed(2)),
         polesProduced,
         failures,
-        failureRate: parseFloat((failureRate * 100).toFixed(2)),
+        failureRate:    parseFloat((failureRate * 100).toFixed(2)),
         totalPurchased: parseFloat(totalPurchased.toFixed(1)),
-        gfPurchased: parseFloat(gfPurchased.toFixed(1)),
-        cfPurchased: parseFloat(cfPurchased.toFixed(1)),
-        cuttingWaste: parseFloat(cuttingWaste.toFixed(1)),
-        failureScrap: parseFloat(failureScrap.toFixed(1)),
-        totalScrap: parseFloat(totalScrap.toFixed(1)),
-        scrapCost: parseFloat(scrapCost.toFixed(2)),
-        modelName: model.name,
-        gfMatId: gfMat.id,
-        cfMatId: cfMat.id,
-        gfType: gfMat.type,
-        cfType: cfMat.type
+        gfPurchased:    parseFloat(gfPurchased.toFixed(1)),
+        cfPurchased:    parseFloat(cfPurchased.toFixed(1)),
+        cuttingWaste:   parseFloat(cuttingWaste.toFixed(1)),
+        failureScrap:   parseFloat(failureScrap.toFixed(1)),
+        totalScrap:     parseFloat(totalScrap.toFixed(1)),
+        scrapCost:      parseFloat(scrapCost.toFixed(2)),
+        modelName:      model.name,
+        gfMatId:        gfMat.id,
+        cfMatId:        cfMat.id,
+        gfLabel:        gfMat.label,
+        cfLabel:        cfMat.label
     });
 }
-// --- Aggregate monthly data ---
+
+// ============================================================
+// POPULATE MODEL FILTER DROPDOWN
+// ============================================================
+const modelSelect = document.getElementById('filterModel');
+poleModels.forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m.name;
+    opt.textContent = `Model ${m.name}`;
+    modelSelect.appendChild(opt);
+});
+
+// ============================================================
+// CHART INSTANCES
+// ============================================================
+let scrapRateChartInst  = null;
+let materialChartInst   = null;
+let failureChartInst    = null;
+let materialScrapInst   = null;
+let costChartInst       = null;
+
+function destroyChart(inst) { if (inst) inst.destroy(); }
+
+// ============================================================
+// FILTER DATA — now respects ALL three filters
+// ============================================================
+function getFilteredData() {
+    const period   = document.getElementById('filterPeriod').value;
+    const model    = document.getElementById('filterModel').value;
+    const material = document.getElementById('filterMaterial').value;
+
+    let data = [...dailyData];
+
+    if (period !== 'all')  data = data.filter(d => d.month === parseInt(period));
+    if (model  !== 'all')  data = data.filter(d => d.modelName === model);
+    if (material === 'gf') data = data.filter(d => d.gfPurchased > 0);
+    if (material === 'cf') data = data.filter(d => d.cfPurchased > 0);
+
+    return data;
+}
+
+// ============================================================
+// AGGREGATE MONTHLY
+// ============================================================
 function getMonthlyData(data) {
     const months = {};
     data.forEach(d => {
@@ -506,73 +455,26 @@ function getMonthlyData(data) {
     return Object.values(months);
 }
 
-// --- Material breakdown (static, computed for full period) ---
-const materialBreakdown = materials.map(m => {
-    const purchased  = 8000 + Math.random() * 4000;
-    const wasteFact  = 0.18 + Math.random() * 0.07;
-    const cutting    = purchased * wasteFact;
-    const failScrap  = purchased * (0.02 + Math.random() * 0.02);
-    const goodUsed   = purchased - cutting - failScrap;
-    const totalScrap = cutting + failScrap;
-    const scrapRate  = (totalScrap / purchased * 100).toFixed(1);
-    const scrapCost  = (totalScrap * m.costPerSqFt).toFixed(0);
-    return {
-        ...m,
-        purchased:  parseFloat(purchased.toFixed(0)),
-        goodUsed:   parseFloat(goodUsed.toFixed(0)),
-        failScrap:  parseFloat(failScrap.toFixed(0)),
-        cutting:    parseFloat(cutting.toFixed(0)),
-        totalScrap: parseFloat(totalScrap.toFixed(0)),
-        scrapRate:  parseFloat(scrapRate),
-        scrapCost:  parseInt(scrapCost)
-    };
-});
-
 // ============================================================
-// POPULATE MODEL FILTER
-// ============================================================
-const modelSelect = document.getElementById('filterModel');
-poleModels.forEach(m => {
-    const opt = document.createElement('option');
-    opt.value = m.name;
-    opt.textContent = `Model ${m.name}`;
-    modelSelect.appendChild(opt);
-});
-
-// ============================================================
-// CHART INSTANCES
-// ============================================================
-let scrapRateChartInst   = null;
-let materialChartInst    = null;
-let failureChartInst     = null;
-let materialScrapInst    = null;
-let costChartInst        = null;
-
-function destroyChart(inst) { if (inst) inst.destroy(); }
-
-// ============================================================
-// FILTER DATA
-// ============================================================
-function getFilteredData() {
-    const period   = document.getElementById('filterPeriod').value;
-    const material = document.getElementById('filterMaterial').value;
-    let data = [...dailyData];
-    if (period !== 'all') data = data.filter(d => d.month === parseInt(period));
-    return data;
-}
-
-// ============================================================
-// UPDATE KPI CARDS
+// KPI CARDS
 // ============================================================
 function updateKPIs(data) {
-    const totalPurchased  = data.reduce((s, d) => s + d.totalPurchased, 0);
-    const totalScrap      = data.reduce((s, d) => s + d.totalScrap, 0);
-    const totalCost       = data.reduce((s, d) => s + d.scrapCost, 0);
-    const totalPoles      = data.reduce((s, d) => s + d.polesProduced, 0);
-    const totalFailures   = data.reduce((s, d) => s + d.failures, 0);
-    const avgScrap        = data.reduce((s, d) => s + d.scrapRate, 0) / data.length;
-    const firstHalfAvg   = data.slice(0, Math.floor(data.length/2)).reduce((s,d) => s + d.scrapRate, 0) / Math.floor(data.length/2);
-    const secondHalfAvg  = data.slice(Math.floor(data.length/2)).reduce((s,d) => s + d.scrapRate, 0) / Math.ceil(data.length/2);
+    if (data.length === 0) {
+        document.getElementById('kpiSection').innerHTML =
+            `<p style="color:#888; padding: 20px;">No data available for the selected filters.</p>`;
+        return;
+    }
+
+    const totalPurchased = data.reduce((s, d) => s + d.totalPurchased, 0);
+    const totalScrap     = data.reduce((s, d) => s + d.totalScrap, 0);
+    const totalCost      = data.reduce((s, d) => s + d.scrapCost, 0);
+    const totalPoles     = data.reduce((s, d) => s + d.polesProduced, 0);
+    const totalFailures  = data.reduce((s, d) => s + d.failures, 0);
+    const avgScrap       = data.reduce((s, d) => s + d.scrapRate, 0) / data.length;
+
+    const half           = Math.floor(data.length / 2);
+    const firstHalfAvg  = half > 0 ? data.slice(0, half).reduce((s, d) => s + d.scrapRate, 0) / half : avgScrap;
+    const secondHalfAvg = data.length - half > 0 ? data.slice(half).reduce((s, d) => s + d.scrapRate, 0) / (data.length - half) : avgScrap;
     const trend          = secondHalfAvg - firstHalfAvg;
 
     document.getElementById('kpiSection').innerHTML = `
@@ -584,17 +486,17 @@ function updateKPIs(data) {
         </div>
         <div class="kpi-card">
             <div class="label">📦 Total Material Purchased</div>
-            <div class="value">${(totalPurchased/1000).toFixed(1)}K</div>
-            <div class="sub">sq ft across all fiber types</div>
+            <div class="value">${(totalPurchased / 1000).toFixed(1)}K</div>
+            <div class="sub">sq ft across selected filters</div>
         </div>
         <div class="kpi-card">
             <div class="label">🗑️ Total Scrap</div>
-            <div class="value yellow">${(totalScrap/1000).toFixed(1)}K</div>
+            <div class="value yellow">${(totalScrap / 1000).toFixed(1)}K</div>
             <div class="sub">sq ft (cutting waste + failures)</div>
         </div>
         <div class="kpi-card">
             <div class="label">💰 Cost of Scrap</div>
-            <div class="value red">$${(totalCost/1000).toFixed(1)}K</div>
+            <div class="value red">$${(totalCost / 1000).toFixed(1)}K</div>
             <div class="sub">Blended material cost</div>
         </div>
         <div class="kpi-card">
@@ -604,7 +506,7 @@ function updateKPIs(data) {
         </div>
         <div class="kpi-card">
             <div class="label">💥 Overall Failure Rate</div>
-            <div class="value ${(totalFailures/totalPoles*100) > 8 ? 'red' : 'yellow'}">${(totalFailures/totalPoles*100).toFixed(1)}%</div>
+            <div class="value ${(totalFailures / totalPoles * 100) > 8 ? 'red' : 'yellow'}">${(totalFailures / totalPoles * 100).toFixed(1)}%</div>
             <div class="sub">Stress test failures / produced</div>
         </div>
     `;
@@ -616,7 +518,6 @@ function updateKPIs(data) {
 function renderScrapRateChart(data) {
     destroyChart(scrapRateChartInst);
 
-    // Sample every 3rd day if all 6 months to keep chart readable
     const sampled = data.filter((_, i) => data.length > 60 ? i % 3 === 0 : true);
 
     scrapRateChartInst = new Chart(document.getElementById('scrapRateChart'), {
@@ -640,8 +541,7 @@ function renderScrapRateChart(data) {
                     borderColor: '#4caf50',
                     borderWidth: 2,
                     borderDash: [6, 4],
-                    pointRadius: 0,
-                    tension: 0
+                    pointRadius: 0
                 },
                 {
                     label: 'Starting Rate (10%)',
@@ -649,8 +549,7 @@ function renderScrapRateChart(data) {
                     borderColor: '#ffc107',
                     borderWidth: 1.5,
                     borderDash: [4, 4],
-                    pointRadius: 0,
-                    tension: 0
+                    pointRadius: 0
                 }
             ]
         },
@@ -659,23 +558,11 @@ function renderScrapRateChart(data) {
             maintainAspectRatio: false,
             plugins: {
                 legend: { labels: { color: '#ccc', font: { size: 11 } } },
-                tooltip: {
-                    callbacks: {
-                        label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)}%`
-                    }
-                }
+                tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)}%` } }
             },
             scales: {
-                x: {
-                    ticks: { color: '#888', maxTicksLimit: 12, font: { size: 10 } },
-                    grid: { color: '#1e1e3a' }
-                },
-                y: {
-                    ticks: { color: '#888', callback: v => v + '%' },
-                    grid: { color: '#1e1e3a' },
-                    min: 4,
-                    max: 14
-                }
+                x: { ticks: { color: '#888', maxTicksLimit: 12, font: { size: 10 } }, grid: { color: '#1e1e3a' } },
+                y: { ticks: { color: '#888', callback: v => v + '%' }, grid: { color: '#1e1e3a' }, min: 4, max: 14 }
             }
         }
     });
@@ -686,28 +573,38 @@ function renderScrapRateChart(data) {
 // ============================================================
 function renderMaterialChart(data) {
     destroyChart(materialChartInst);
-    const monthly = getMonthlyData(data);
+
+    const material = document.getElementById('filterMaterial').value;
+    const monthly  = getMonthlyData(data);
+
+    // Scale purchased/cutting waste by material split if filtered
+    const purchasedData = monthly.map(m => {
+        const used = material === 'gf' ? (m.purchased * 0.6) - (m.cuttingWaste * 0.6) - (m.failureScrap * 0.6)
+                   : material === 'cf' ? (m.purchased * 0.4) - (m.cuttingWaste * 0.4) - (m.failureScrap * 0.4)
+                   : m.purchased - m.totalScrap;
+        return parseFloat(Math.max(0, used).toFixed(0));
+    });
+
+    const cuttingData = monthly.map(m =>
+        parseFloat((material === 'gf' ? m.cuttingWaste * 0.6
+                  : material === 'cf' ? m.cuttingWaste * 0.4
+                  : m.cuttingWaste).toFixed(0))
+    );
+
+    const failureData = monthly.map(m =>
+        parseFloat((material === 'gf' ? m.failureScrap * 0.6
+                  : material === 'cf' ? m.failureScrap * 0.4
+                  : m.failureScrap).toFixed(0))
+    );
 
     materialChartInst = new Chart(document.getElementById('materialChart'), {
         type: 'bar',
         data: {
             labels: monthly.map(m => m.label),
             datasets: [
-                {
-                    label: 'Used in Good Poles',
-                    data: monthly.map(m => parseFloat((m.purchased - m.totalScrap).toFixed(0))),
-                    backgroundColor: '#4caf50'
-                },
-                {
-                    label: 'Cutting Waste',
-                    data: monthly.map(m => parseFloat(m.cuttingWaste.toFixed(0))),
-                    backgroundColor: '#ffc107'
-                },
-                {
-                    label: 'Failure Scrap',
-                    data: monthly.map(m => parseFloat(m.failureScrap.toFixed(0))),
-                    backgroundColor: '#e94560'
-                }
+                { label: 'Used in Good Poles', data: purchasedData, backgroundColor: '#4caf50' },
+                { label: 'Cutting Waste',      data: cuttingData,   backgroundColor: '#ffc107' },
+                { label: 'Failure Scrap',      data: failureData,   backgroundColor: '#e94560' }
             ]
         },
         options: {
@@ -715,51 +612,60 @@ function renderMaterialChart(data) {
             maintainAspectRatio: false,
             plugins: {
                 legend: { labels: { color: '#ccc', font: { size: 11 } } },
-                tooltip: {
-                    callbacks: {
-                        label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} sq ft`
-                    }
-                }
+                tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()} sq ft` } }
             },
             scales: {
-                x: {
-                    stacked: true,
-                    ticks: { color: '#888' },
-                    grid: { color: '#1e1e3a' }
-                },
-                y: {
-                    stacked: true,
-                    ticks: { color: '#888', callback: v => v.toLocaleString() },
-                    grid: { color: '#1e1e3a' }
-                }
+                x: { stacked: true, ticks: { color: '#888' }, grid: { color: '#1e1e3a' } },
+                y: { stacked: true, ticks: { color: '#888', callback: v => v.toLocaleString() }, grid: { color: '#1e1e3a' } }
             }
         }
     });
 }
 
 // ============================================================
-// CHART: FAILURE RATE BY MODEL (Top 10)
+// CHART: FAILURE RATE BY MODEL (from filtered data)
 // ============================================================
-function renderFailureChart() {
+function renderFailureChart(data) {
     destroyChart(failureChartInst);
 
     const selectedModel = document.getElementById('filterModel').value;
-    let models = [...poleModels];
+
+    // Aggregate failures per model from filtered daily data
+    const modelFailures = {};
+    const modelProduced = {};
+
+    data.forEach(d => {
+        if (!modelFailures[d.modelName]) {
+            modelFailures[d.modelName] = 0;
+            modelProduced[d.modelName] = 0;
+        }
+        modelFailures[d.modelName] += d.failures;
+        modelProduced[d.modelName] += d.polesProduced;
+    });
+
+    let modelStats = Object.keys(modelFailures).map(name => ({
+        name,
+        failRate: modelProduced[name] > 0
+            ? parseFloat(((modelFailures[name] / modelProduced[name]) * 100).toFixed(1))
+            : 0
+    }));
+
     if (selectedModel !== 'all') {
-        models = models.filter(m => m.name === selectedModel);
+        modelStats = modelStats.filter(m => m.name === selectedModel);
     }
-    const top10 = models.sort((a, b) => b.baseFailRate - a.baseFailRate).slice(0, 10);
+
+    modelStats = modelStats.sort((a, b) => b.failRate - a.failRate).slice(0, 10);
 
     failureChartInst = new Chart(document.getElementById('failureChart'), {
         type: 'bar',
         data: {
-            labels: top10.map(m => `Model ${m.name}`),
+            labels: modelStats.map(m => `Model ${m.name}`),
             datasets: [{
                 label: 'Failure Rate (%)',
-                data: top10.map(m => parseFloat((m.baseFailRate * 100).toFixed(1))),
-                backgroundColor: top10.map(m =>
-                    m.baseFailRate > 0.10 ? '#e94560' :
-                    m.baseFailRate > 0.07 ? '#ffc107' : '#4caf50'
+                data: modelStats.map(m => m.failRate),
+                backgroundColor: modelStats.map(m =>
+                    m.failRate > 10 ? '#e94560' :
+                    m.failRate > 7  ? '#ffc107' : '#4caf50'
                 ),
                 borderRadius: 4
             }]
@@ -770,45 +676,45 @@ function renderFailureChart() {
             maintainAspectRatio: false,
             plugins: {
                 legend: { display: false },
-                tooltip: {
-                    callbacks: {
-                        label: ctx => ` Failure Rate: ${ctx.parsed.x.toFixed(1)}%`
-                    }
-                }
+                tooltip: { callbacks: { label: ctx => ` Failure Rate: ${ctx.parsed.x.toFixed(1)}%` } }
             },
             scales: {
-                x: {
-                    ticks: { color: '#888', callback: v => v + '%' },
-                    grid: { color: '#1e1e3a' }
-                },
-                y: {
-                    ticks: { color: '#ccc', font: { size: 10 } },
-                    grid: { color: '#1e1e3a' }
-                }
+                x: { ticks: { color: '#888', callback: v => v + '%' }, grid: { color: '#1e1e3a' } },
+                y: { ticks: { color: '#ccc', font: { size: 10 } }, grid: { color: '#1e1e3a' } }
             }
         }
     });
 }
 
 // ============================================================
-// CHART: SCRAP BY MATERIAL TYPE (Doughnut)
+// CHART: SCRAP BY MATERIAL TYPE (Doughnut) — from filtered data
 // ============================================================
-function renderMaterialScrapChart() {
+function renderMaterialScrapChart(data) {
     destroyChart(materialScrapInst);
 
-    const matFilter = document.getElementById('filterMaterial').value;
-    let mats = materialBreakdown;
-    if (matFilter === 'gf') mats = mats.filter(m => m.type === 'gf');
-    if (matFilter === 'cf') mats = mats.filter(m => m.type === 'cf');
+    const material = document.getElementById('filterMaterial').value;
 
-    const colors = ['#e94560','#ffc107','#4caf50','#2196f3','#9c27b0','#ff5722'];
+    // Build per-material scrap totals from filtered daily data
+    const matTotals = {};
+    materials.forEach(m => { matTotals[m.id] = 0; });
+
+    data.forEach(d => {
+        matTotals[d.gfMatId] += d.cuttingWaste * 0.6 + d.failureScrap * 0.6;
+        matTotals[d.cfMatId] += d.cuttingWaste * 0.4 + d.failureScrap * 0.4;
+    });
+
+    let mats = materials;
+    if (material === 'gf') mats = materials.filter(m => m.type === 'gf');
+    if (material === 'cf') mats = materials.filter(m => m.type === 'cf');
+
+    const colors = ['#e94560', '#ffc107', '#4caf50', '#2196f3', '#9c27b0', '#ff5722'];
 
     materialScrapInst = new Chart(document.getElementById('materialScrapChart'), {
         type: 'doughnut',
         data: {
             labels: mats.map(m => m.label),
             datasets: [{
-                data: mats.map(m => m.totalScrap),
+                data: mats.map(m => parseFloat(matTotals[m.id].toFixed(0))),
                 backgroundColor: colors.slice(0, mats.length),
                 borderColor: '#0f0f1a',
                 borderWidth: 3
@@ -819,11 +725,7 @@ function renderMaterialScrapChart() {
             maintainAspectRatio: false,
             plugins: {
                 legend: { position: 'bottom', labels: { color: '#ccc', font: { size: 10 }, padding: 12 } },
-                tooltip: {
-                    callbacks: {
-                        label: ctx => ` ${ctx.label}: ${ctx.parsed.toLocaleString()} sq ft scrapped`
-                    }
-                }
+                tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.parsed.toLocaleString()} sq ft scrapped` } }
             }
         }
     });
@@ -834,7 +736,21 @@ function renderMaterialScrapChart() {
 // ============================================================
 function renderCostChart(data) {
     destroyChart(costChartInst);
-    const monthly = getMonthlyData(data);
+
+    const material = document.getElementById('filterMaterial').value;
+    const monthly  = getMonthlyData(data);
+
+    const cuttingCost = monthly.map(m =>
+        parseFloat((material === 'gf' ? m.cuttingWaste * 0.6 * 1.55
+                  : material === 'cf' ? m.cuttingWaste * 0.4 * 6.20
+                  : m.cuttingWaste * 3.20).toFixed(0))
+    );
+
+    const failureCost = monthly.map(m =>
+        parseFloat((material === 'gf' ? m.failureScrap * 0.6 * 1.55
+                  : material === 'cf' ? m.failureScrap * 0.4 * 6.20
+                  : m.failureScrap * 3.20).toFixed(0))
+    );
 
     costChartInst = new Chart(document.getElementById('costChart'), {
         type: 'line',
@@ -843,7 +759,7 @@ function renderCostChart(data) {
             datasets: [
                 {
                     label: 'Cutting Waste Cost',
-                    data: monthly.map(m => parseFloat((m.cuttingWaste * 3.20).toFixed(0))),
+                    data: cuttingCost,
                     borderColor: '#ffc107',
                     backgroundColor: 'rgba(255,193,7,0.15)',
                     borderWidth: 2,
@@ -852,7 +768,7 @@ function renderCostChart(data) {
                 },
                 {
                     label: 'Failure Scrap Cost',
-                    data: monthly.map(m => parseFloat((m.failureScrap * 3.20).toFixed(0))),
+                    data: failureCost,
                     borderColor: '#e94560',
                     backgroundColor: 'rgba(233,69,96,0.1)',
                     borderWidth: 2,
@@ -866,51 +782,79 @@ function renderCostChart(data) {
             maintainAspectRatio: false,
             plugins: {
                 legend: { labels: { color: '#ccc', font: { size: 11 } } },
-                tooltip: {
-                    callbacks: {
-                        label: ctx => ` ${ctx.dataset.label}: $${ctx.parsed.y.toLocaleString()}`
-                    }
-                }
+                tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: $${ctx.parsed.y.toLocaleString()}` } }
             },
             scales: {
-                x: {
-                    ticks: { color: '#888' },
-                    grid: { color: '#1e1e3a' }
-                },
-                y: {
-                    ticks: { color: '#888', callback: v => '$' + v.toLocaleString() },
-                    grid: { color: '#1e1e3a' }
-                }
+                x: { ticks: { color: '#888' }, grid: { color: '#1e1e3a' } },
+                y: { ticks: { color: '#888', callback: v => '$' + v.toLocaleString() }, grid: { color: '#1e1e3a' } }
             }
         }
     });
 }
 
 // ============================================================
-// MATERIAL TABLE
+// MATERIAL TABLE — filtered by material type
 // ============================================================
-function renderMaterialTable() {
-    const matFilter = document.getElementById('filterMaterial').value;
-    let mats = materialBreakdown;
-    if (matFilter === 'gf') mats = mats.filter(m => m.type === 'gf');
-    if (matFilter === 'cf') mats = mats.filter(m => m.type === 'cf');
+function renderMaterialTable(data) {
+    const material = document.getElementById('filterMaterial').value;
+
+    // Compute per-material stats from filtered daily data
+    const matStats = {};
+    materials.forEach(m => {
+        matStats[m.id] = {
+            ...m,
+            purchased:  0,
+            goodUsed:   0,
+            failScrap:  0,
+            cutting:    0,
+            totalScrap: 0,
+            scrapCost:  0
+        };
+    });
+
+    data.forEach(d => {
+        // GF share: 60% of daily material
+        const gf = matStats[d.gfMatId];
+        gf.purchased  += d.gfPurchased;
+        gf.cutting    += d.cuttingWaste * 0.6;
+        gf.failScrap  += d.failureScrap * 0.6;
+        gf.totalScrap += (d.cuttingWaste + d.failureScrap) * 0.6;
+        gf.goodUsed   += d.gfPurchased - (d.cuttingWaste + d.failureScrap) * 0.6;
+        gf.scrapCost  += (d.cuttingWaste + d.failureScrap) * 0.6 * gf.costPerSqFt;
+
+        // CF share: 40% of daily material
+        const cf = matStats[d.cfMatId];
+        cf.purchased  += d.cfPurchased;
+        cf.cutting    += d.cuttingWaste * 0.4;
+        cf.failScrap  += d.failureScrap * 0.4;
+        cf.totalScrap += (d.cuttingWaste + d.failureScrap) * 0.4;
+        cf.goodUsed   += d.cfPurchased - (d.cuttingWaste + d.failureScrap) * 0.4;
+        cf.scrapCost  += (d.cuttingWaste + d.failureScrap) * 0.4 * cf.costPerSqFt;
+    });
+
+    let mats = Object.values(matStats);
+    if (material === 'gf') mats = mats.filter(m => m.type === 'gf');
+    if (material === 'cf') mats = mats.filter(m => m.type === 'cf');
 
     const tbody = document.getElementById('materialTable');
     tbody.innerHTML = '';
+
     mats.forEach(m => {
-        const badgeClass = m.scrapRate > 22 ? 'red' : m.scrapRate > 18 ? 'yellow' : 'green';
-        const badgeText  = m.scrapRate > 22 ? 'High' : m.scrapRate > 18 ? 'Medium' : 'Low';
+        const scrapRate   = m.purchased > 0 ? (m.totalScrap / m.purchased * 100).toFixed(1) : '0.0';
+        const badgeClass  = scrapRate > 22 ? 'red' : scrapRate > 18 ? 'yellow' : 'green';
+        const badgeText   = scrapRate > 22 ? 'High' : scrapRate > 18 ? 'Medium' : 'Low';
+
         tbody.innerHTML += `
             <tr>
                 <td><strong>${m.label}</strong></td>
                 <td>${m.type === 'gf' ? '🧶 Fiberglass' : '🖤 Carbon Fiber'}</td>
-                <td>${m.purchased.toLocaleString()}</td>
-                <td>${m.goodUsed.toLocaleString()}</td>
-                <td>${m.failScrap.toLocaleString()}</td>
-                <td>${m.cutting.toLocaleString()}</td>
-                <td>${m.totalScrap.toLocaleString()}</td>
-                <td><span class="badge ${badgeClass}">${m.scrapRate}%</span></td>
-                <td>$${m.scrapCost.toLocaleString()}</td>
+                <td>${Math.round(m.purchased).toLocaleString()}</td>
+                <td>${Math.max(0, Math.round(m.goodUsed)).toLocaleString()}</td>
+                <td>${Math.round(m.failScrap).toLocaleString()}</td>
+                <td>${Math.round(m.cutting).toLocaleString()}</td>
+                <td>${Math.round(m.totalScrap).toLocaleString()}</td>
+                <td><span class="badge ${badgeClass}">${scrapRate}%</span></td>
+                <td>$${Math.round(m.scrapCost).toLocaleString()}</td>
                 <td><span class="badge ${badgeClass}">${badgeText}</span></td>
             </tr>
         `;
@@ -918,17 +862,17 @@ function renderMaterialTable() {
 }
 
 // ============================================================
-// MAIN UPDATE FUNCTION
+// MAIN UPDATE — passes filtered data to every render function
 // ============================================================
 function updateDashboard() {
     const data = getFilteredData();
     updateKPIs(data);
     renderScrapRateChart(data);
     renderMaterialChart(data);
-    renderFailureChart();
-    renderMaterialScrapChart();
+    renderFailureChart(data);
+    renderMaterialScrapChart(data);
     renderCostChart(data);
-    renderMaterialTable();
+    renderMaterialTable(data);
 }
 
 // Initial render
