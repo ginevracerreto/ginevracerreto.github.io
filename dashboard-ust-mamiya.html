@@ -423,46 +423,42 @@ function cuttingWasteFactor() {
 }
 
 // --- Generate daily data for 180 days ---
-const startDate = new Date(2023, 0, 2); // Jan 2, 2023
+const startDate = new Date(2023, 0, 2);
 const dailyData = [];
 
-// Simulate a gradual improvement in scrap rate (10% → 7%) over 6 months
 for (let d = 0; d < 180; d++) {
     const date = new Date(startDate);
     date.setDate(startDate.getDate() + d);
-    const month = date.getMonth() + 1; // 1-6
+    const month = date.getMonth() + 1;
     const dayOfWeek = date.getDay();
-    if (dayOfWeek === 0 || dayOfWeek === 6) continue; // skip weekends
+    if (dayOfWeek === 0 || dayOfWeek === 6) continue;
 
-    // Progress factor: 0 = start, 1 = end
     const progress = d / 179;
-    // Scrap rate improves from ~10% to ~7% with some noise
     const baseScrap = 10 - (3 * progress) + (Math.random() * 2 - 1);
     const scrapRate = Math.max(5.5, Math.min(13, baseScrap));
 
-    // Poles produced that day (20-45 poles/day)
     const polesProduced = Math.floor(20 + Math.random() * 25);
-
-    // Failures (based on scrap rate trend)
     const failureRate = 0.06 + (0.04 * (1 - progress)) + (Math.random() * 0.03 - 0.015);
     const failures = Math.round(polesProduced * failureRate);
 
-    // Material purchased that day (sq ft)
-    const totalPurchased = polesProduced * 28 + Math.random() * 200;
+    // Assign a random pole model to each day's primary production run
+    const model = poleModels[Math.floor(Math.random() * poleModels.length)];
 
-    // Cutting waste
+    // Assign a random material pair for the day
+    const gfMat = materials.filter(m => m.type === 'gf')[Math.floor(Math.random() * 3)];
+    const cfMat = materials.filter(m => m.type === 'cf')[Math.floor(Math.random() * 3)];
+
+    const totalPurchased = polesProduced * 28 + Math.random() * 200;
+    const gfPurchased = totalPurchased * 0.6;
+    const cfPurchased = totalPurchased * 0.4;
+
     const wasteFactor = cuttingWasteFactor();
     const cuttingWaste = totalPurchased * wasteFactor;
-
-    // Failure scrap
-    const avgPoleArea = 28;
-    const failureScrap = failures * avgPoleArea;
-
-    // Total scrap
+    const failureScrap = failures * 28;
     const totalScrap = cuttingWaste + failureScrap;
 
-    // Cost of scrap (blended rate ~$3.20/sqft)
-    const blendedRate = 3.20;
+    // Blended cost based on actual materials used that day
+    const blendedRate = (gfMat.costPerSqFt * 0.6) + (cfMat.costPerSqFt * 0.4);
     const scrapCost = totalScrap * blendedRate;
 
     dailyData.push({
@@ -474,13 +470,19 @@ for (let d = 0; d < 180; d++) {
         failures,
         failureRate: parseFloat((failureRate * 100).toFixed(2)),
         totalPurchased: parseFloat(totalPurchased.toFixed(1)),
+        gfPurchased: parseFloat(gfPurchased.toFixed(1)),
+        cfPurchased: parseFloat(cfPurchased.toFixed(1)),
         cuttingWaste: parseFloat(cuttingWaste.toFixed(1)),
         failureScrap: parseFloat(failureScrap.toFixed(1)),
         totalScrap: parseFloat(totalScrap.toFixed(1)),
-        scrapCost: parseFloat(scrapCost.toFixed(2))
+        scrapCost: parseFloat(scrapCost.toFixed(2)),
+        modelName: model.name,
+        gfMatId: gfMat.id,
+        cfMatId: cfMat.id,
+        gfType: gfMat.type,
+        cfType: cfMat.type
     });
 }
-
 // --- Aggregate monthly data ---
 function getMonthlyData(data) {
     const months = {};
